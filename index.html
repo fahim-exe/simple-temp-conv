@@ -1,0 +1,63 @@
+<!-- 
+    create a site where you will take temperature as inpu
+    convert it between celcius, kelvin and farenheit
+    use the formula
+    (c/5)=((f-32)/9)=((k-273.15)/5)
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temp Converter 🌡️</title>
+ </head>
+ <body>
+
+    <form action="">
+        <h1>Temperature Conversion:</h1>
+        <input type="number" id="userInput" value="0"><br>
+
+        <input type="radio" id="toFarenheit" name="unit">
+        <label for="toFarenheit">Celcius 👉 Farenheit</label><br>
+        <input type="radio" id="toCelcius" name="unit">
+        <label for="toCelcius">Farenheit 👉 Celcius</label><br>
+        
+
+        <button type="button" onclick="convert()">Submit</button>
+        
+        <p id="result">
+            
+        </p>
+
+    </form>
+
+
+    <!-- <div class="container">
+
+        <h2>Temperature Converter</h2>
+        <label for="userInput">Your Temperature</label>
+        <input type="text" name="tempInput" id="userInput" placeholder="Enter Temperature">
+        
+        <div class="cov">
+
+            <input type="radio" name="conversion" id="cToF">
+            <label for="cToF">Celcius to Farenheit</label>
+            <input type="radio" name="conversion" id="fToC">
+            <label for="fToC">Farenheit to Celcius</label>
+        </div>
+
+        <input type="button" class="submitBtn" name="submit" id="submit" value="Convert">
+
+        <h2></h2>
+        
+
+        
+    </div> -->
+
+
+    <script src="index.js"></script>
+ </body>
+ </html>
